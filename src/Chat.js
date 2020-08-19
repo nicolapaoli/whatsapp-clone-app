@@ -40,7 +40,7 @@ function Chat() {
             .collection('messages')
             .add({
                 message: input,
-                name: user.displayName,
+                user: user.displayName,
                 timestamp: firebase.firestore.FieldValue.serverTimestamp()
             })
         setInput("")
@@ -73,9 +73,9 @@ function Chat() {
             </div>
             <div className="chat__body">
                 {messages.map(message => (
-                    <p key={message.id} id={message.id} className={`chat__message ${message.name === user.displayName && "chat__receiver"}`}>
+                    <p key={message.id} id={message.id} className={`chat__message ${message.user === user.displayName && "chat__receiver"}`}>
                     <span className="chat__name">
-                        {message.name}
+                        {message.user}
                     </span>
                         {message.message}
                         <span className="chat__timestamp">

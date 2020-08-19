@@ -11,10 +11,6 @@ const firebaseConfig = {
     measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
-console.log('LOADING FIREBASE ENVVAR')
-console.log(process.env.REACT_APP_FIREBASE_APIKEY)
-console.log(process.env.REACT_APP_FIREBASE_PROJECT_ID)
-
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 const db = firebaseApp.firestore();
