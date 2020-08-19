@@ -10,7 +10,7 @@ What's in this project:
 - Deploy with Firebase
 
 ### Screenshot
-This is the result [DEMO here](https://whatsapp-clone-app-nic.web.app/) (you need a Gmail account to login with Google)
+This is the result <a href="https://whatsapp-clone-app-nic.web.app/" target="_blank">--> DEMO</a> (you need a Gmail account to login with Google)
 ![whatsapp clone screen](./docs/whatsapp-clone-screen.png)
 
 
